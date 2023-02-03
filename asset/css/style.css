@@ -1,0 +1,11 @@
+body {
+    background-image : url(../image/nightcity.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgb(249, 243, 243);
+    margin: 10;
+    padding: 10;
+}
