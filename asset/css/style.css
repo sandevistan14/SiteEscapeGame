@@ -1,11 +1,28 @@
 body {
     background-image : url(../image/nightcity.png);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.5;
     color: rgb(249, 243, 243);
     margin: 10;
     padding: 10;
 }
+
+/* Path: asset\css\style.css */
+
+div.element {
+    -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
+    backdrop-filter: blur(15px);
+    background-color: rgba(182, 182, 182, 0.2);
+    text-align: left;
+    display: block;
+    width: 60%;
+    margin: auto;
+    padding: 40px;
+    height: auto;
+    text-shadow: 3px 3px 3px #000000;
+}
+
