@@ -1,14 +1,44 @@
+@font-face {
+    font-family: "cyberfont";
+    src: url("../font/Play/Play-Regular.ttf");
+}
+img {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+
 body {
     background-image : url(../image/nightcity.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'cyberfont';
     font-size: 20px;
     line-height: 1.5;
     color: rgb(249, 243, 243);
     margin: 10;
     padding: 10;
+}
+
+.my-augfiguration {
+    --aug-tr: 25px;
+    --aug-bl: 30px;
+    --aug-br: 30px;
+    --aug-border-all: 10px;
+    --aug-border-bg: linear-gradient(to botto...);
+    --aug-inlay-all: 10px;
+    --aug-inlay-bg: #fbe806;
+    background: linear-gradient(#ff604d, #b1ffff);
+    color: #b1ffff;
+  }
+
+.my-augfiguration::after{
+    --aug-border : 15px;
+    background-color : rgb(182, 182, 182, 0.2);
 }
 
 /* Path: asset\css\style.css */
