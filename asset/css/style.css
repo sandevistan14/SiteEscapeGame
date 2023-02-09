@@ -38,7 +38,7 @@ body {
 
 .my-augfiguration::after{
     --aug-border : 15px;
-    background-color : rgb(182, 182, 182, 0.2);
+    background-color : rgb(182, 182, 182);
 }
 
 /* Path: asset\css\style.css */
@@ -55,4 +55,15 @@ div.element {
     height: auto;
     text-shadow: 3px 3px 3px #000000;
 }
+/*
+.contour_pied {
+    
+}
 
+.contenu_pied {
+
+}
+*/
+.texte_pied {
+padding: 2% 2%;
+}
