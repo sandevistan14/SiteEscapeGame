@@ -2,6 +2,11 @@
     font-family: "cyberfont";
     src: url("../font/Play/Play-Regular.ttf");
 }
+
+a {
+    text-decoration: none;  /* Permet d'enlever le soulignage automatique */
+}
+
 img {
     width: 90%;
     height: auto;
@@ -64,6 +69,34 @@ div.element {
 
 }
 */
-.texte_pied {
-padding: 2% 2%;
-}
+.contenu_pied{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .socials{
+    position: center;
+    display: flex;
+    margin-left: -7%;
+  }
+
+  .socials li{
+    position: relative;
+    list-style: none;
+    margin: 10%;
+  }
+
+  .socials li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 170%;
+  }
+
+  .socials li a:hover{
+    top: -20%;
+  }
