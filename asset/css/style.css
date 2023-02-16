@@ -1,102 +1,119 @@
 @font-face {
-    font-family: "cyberfont";
-    src: url("../font/Play/Play-Regular.ttf");
+  font-family: "cyberfont";
+  src: url("../font/Play/Play-Regular.ttf");
 }
 
 a {
-    text-decoration: none;  /* Permet d'enlever le soulignage automatique */
+  text-decoration: none;
+  /* Permet d'enlever le soulignage automatique */
 }
 
 img {
-    width: 90%;
-    height: auto;
-    display: block;
-    margin: auto;
-    padding: 10px;
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: auto;
+  padding: 10px;
 }
 
 
 body {
-    background-image : url(../image/nightcity.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'cyberfont';
-    font-size: 20px;
-    line-height: 1.5;
-    color: rgb(249, 243, 243);
-    margin: 10;
-    padding: 10;
+  background-image: url(../image/nightcity.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'cyberfont';
+  font-size: 20px;
+  line-height: 1.5;
+  color: rgb(249, 243, 243);
+  margin: 10;
+  padding: 10;
+}
+
+.niveau2 {
+  background-image: url(../image/Matrice.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'cyberfont';
+  font-size: 20px;
+  line-height: 1.5;
+  color: rgb(249, 243, 243);
+  margin: 10;
+  padding: 10;
 }
 
 .my-augfiguration {
-    --aug-tr: 25px;
-    --aug-bl: 30px;
-    --aug-br: 30px;
-    --aug-border-all: 10px;
-    --aug-border-bg: linear-gradient(to botto...);
-    --aug-inlay-all: 10px;
-    --aug-inlay-bg: #fbe806;
-    background: linear-gradient(#ff604d, #b1ffff);
-    color: #b1ffff;
-  }
+  --aug-tr: 25px;
+  --aug-bl: 30px;
+  --aug-br: 30px;
+  --aug-border-all: 10px;
+  --aug-border-bg: linear-gradient(to botto...);
+  --aug-inlay-all: 10px;
+  --aug-inlay-bg: #fbe806;
+  background: linear-gradient(#ff604d, #b1ffff);
+  color: #b1ffff;
+}
 
-.my-augfiguration::after{
-    --aug-border : 15px;
-    background-color : rgb(182, 182, 182);
+.my-augfiguration::after {
+  --aug-border: 15px;
+  background-color: rgb(182, 182, 182);
+}
+
+button.button_niv2 {
+  cursor: default;
+  border: 0px;
+  background: none;
+  filter: blur(2px);
+  padding-top: 1,9px;
+  width: 41px;
+  height: 25px;
 }
 
 /* Path: asset\css\style.css */
 
 div.element {
-    -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
-    backdrop-filter: blur(15px);
-    background-color: rgba(182, 182, 182, 0.2);
-    text-align: left;
-    display: block;
-    width: 60%;
-    margin: auto;
-    padding: 40px;
-    height: auto;
-    text-shadow: 3px 3px 3px #000000;
-}
-/*
-.contour_pied {
-    
+  -webkit-backdrop-filter: blur(15px);
+  /* assure la compatibilité avec safari */
+  backdrop-filter: blur(15px);
+  background-color: rgba(182, 182, 182, 0.2);
+  text-align: left;
+  display: block;
+  width: 60%;
+  margin: auto;
+  padding: 40px;
+  height: auto;
+  text-shadow: 3px 3px 3px #000000;
 }
 
 .contenu_pied {
-
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
-*/
-.contenu_pied{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-  }
 
-  .socials{
-    position: center;
-    display: flex;
-    margin-left: -7%;
-  }
+.socials {
+  position: center;
+  display: flex;
+  margin-left: -7%;
+}
 
-  .socials li{
-    position: relative;
-    list-style: none;
-    margin: 10%;
-  }
+.socials li {
+  position: relative;
+  list-style: none;
+  margin: 10%;
+}
 
-  .socials li a{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FFFFFF;
-    font-size: 170%;
-  }
+.socials li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 170%;
+}
 
-  .socials li a:hover{
-    top: -20%;
-  }
+.socials li a:hover {
+  top: -20%;
+}
