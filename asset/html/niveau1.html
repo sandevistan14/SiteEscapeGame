@@ -4,123 +4,64 @@
 <!-- head -->
 
 <head>
-        <script src="../javascript/script.js"></script>
-        <link id="theme" rel="stylesheet" type="text/css" href="../css/augmented-ui-main/augmented-ui.css">
-        <link rel="icon" href="../image/Cyberpunk_2077_favicon.png">
-        <link id="theme" rel="stylesheet" type="text/css" href="../css/style.css">
-        <!-- icones -->
-        <script src="https://kit.fontawesome.com/5777e7870f.js" crossorigin="anonymous"></script>
-        
-        <!-- meta -->
-        <meta name="charset" content="utf-8">
-        <meta name="author"
-                content="Brahmi Moundir, Ditlecadet Michael, Essahli Ayoub, Lestrelin Valentin, Lerouge robin">
-        <meta name="description" content="Page du premier niveau">
+   <script src="../javascript/script.js"></script>
+   <link id="theme" rel="stylesheet" type="text/css" href="../css/augmented-ui-main/augmented-ui.css">
+   <link rel="icon" href="../image/Cyberpunk_2077_favicon.png">
+   <link id="theme" rel="stylesheet" type="text/css" href="../css/style.css">
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lato');
+   </style>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+   <link href='https://fonts.googleapis.com/css?family=Arimo:700' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+   <!-- icones -->
+   <script src="https://kit.fontawesome.com/5777e7870f.js" crossorigin="anonymous"></script>
 
-        <!-- titre de page -->
-        <title>EscapeGame</title>
+   <!-- meta -->
+   <meta name="charset" content="utf-8">
+   <meta name="author" content="Brahmi Moundir, Ditlecadet Michael, Essahli Ayoub, Lestrelin Valentin, Lerouge robin">
+   <meta name="description" content="Page du premier niveau">
+
+   <!-- titre de page -->
+   <title>EscapeGame</title>
 </head>
 
 <!-- body -->
 
 
 <body>
-        <audio src="../sound/cyberpunkbackgroundsound.mp3" autoplay="true" loop></audio>
-        <div class="element">
-                <h3>
-                        HELOOOO NIGHT CITY A remplacer
-                </h3>
-
-                L’histoire se déroule en 2077 dans une mégalopole américaine nommée
-                 Night City, vous êtes un netrunner : un hacker aux capacités augmentées
-                  par des implants cybernétiques et un ordinateur neural. Connu pour vos
-                   engagements politiques contre les méga-corporations qui ravagent la ville,
-                    vos activités vous ont attirés les foudres de l’une d’entre elles : Arasaka
-                     Corporation. Celle-ci vous a implanté à votre insu un virus informatique
-                      vous piégeant dans le Cyberespace : une version améliorée et extra
-                       sensorielle du Web de 2022. Sans possibilité d’user de votre corps
-                        humain, vous devez à tout prix vous échapper du
-                         Cyberespace avant que Arasaka ne retrouve votre véritable
-                          corps et ne vous tue.
-
-                        <br>
-                
-                Pour jouer, veuillez entrer le code : <input type="password" name="password" id="password" placeholder="Entrez le code pour vous infiltrer dans le système" maxlength="4" onkeydown="EnterPressed()"></input>
+   <br>
+   <audio src="../sound/cyberpunkbackgroundsound.mp3" autoplay="true" loop></audio>
+   <div class="element">
+      <h3>
+         Ordinateur
+      </h3>
 
 
-        </div>
+      Vous êtes bloqués dans l’intranet d’Arasaka,
+      en essayant de découvrir des moyens pour sortir, vous découvrez un faille informatique
+      quii vous donne accés a un ordinateur, il semblerait que ce soit celui de Yorinobu
+      Arasaka, le PDG d’Arasaka.
+      <br>
+      <br>
+      Grâce à vos talents de netrunner, vous parvenez à trouver une porte dérobée pouvant
+      potentiellement vous donner accès aux droits administrateurs et ainsi pouvoir sortir
+      de l’intranet de la corporation. Vous êtes malheureusement bloqués par un mot de passe
+      impossible à cracker automatiquement, vous savez seulement qu’il est composé de 10 chiffres.
+      <br>
+      Essayer de trouver des indices dans l'ordinateur de Yorinobu Arasaka.
+
+      <br>
+      <br>
+      <div data-augmented-ui="t-clip br-clip both" class="computer">
+         <a href="OrdinateurSaburo.html">
+            <h3 class="titreordi"> Accéder a l'ordinateur</h3>
+         </a>
+      </div>
+      <br>
 
 
-
-<div class="timer">
-        <div class="timer--clock">
-           <div class="minutes-group clock-display-grp">
-              <div class="first number-grp">
-                 <div class="number-grp-wrp">
-                    <div class="num num-0"><p>0</p></div>
-                    <div class="num num-1"><p>1</p></div>
-                    <div class="num num-2"><p>2</p></div>
-                    <div class="num num-3"><p>3</p></div>
-                    <div class="num num-4"><p>4</p></div>
-                    <div class="num num-5"><p>5</p></div>
-                    <div class="num num-6"><p>6</p></div>
-                    <div class="num num-7"><p>7</p></div>
-                    <div class="num num-8"><p>8</p></div>
-                    <div class="num num-9"><p>9</p></div>
-                 </div>
-              </div>
-              <div class="second number-grp">
-                 <div class="number-grp-wrp">
-                    <div class="num num-0"><p>0</p></div>
-                    <div class="num num-1"><p>1</p></div>
-                    <div class="num num-2"><p>2</p></div>
-                    <div class="num num-3"><p>3</p></div>
-                    <div class="num num-4"><p>4</p></div>
-                    <div class="num num-5"><p>5</p></div>
-                    <div class="num num-6"><p>6</p></div>
-                    <div class="num num-7"><p>7</p></div>
-                    <div class="num num-8"><p>8</p></div>
-                    <div class="num num-9"><p>9</p></div>
-                 </div>
-              </div>
-           </div>
-           <div class="clock-separator"><p>:</p></div>
-           <div class="seconds-group clock-display-grp">
-              <div class="first number-grp">
-                 <div class="number-grp-wrp">
-                    <div class="num num-0"><p>0</p></div>
-                    <div class="num num-1"><p>1</p></div>
-                    <div class="num num-2"><p>2</p></div>
-                    <div class="num num-3"><p>3</p></div>
-                    <div class="num num-4"><p>4</p></div>
-                    <div class="num num-5"><p>5</p></div>
-                    <div class="num num-6"><p>6</p></div>
-                    <div class="num num-7"><p>7</p></div>
-                    <div class="num num-8"><p>8</p></div>
-                    <div class="num num-9"><p>9</p></div>
-                 </div>
-              </div>
-              <div class="second number-grp">
-                 <div class="number-grp-wrp">
-                    <div class="num num-0"><p>0</p></div>
-                    <div class="num num-1"><p>1</p></div>
-                    <div class="num num-2"><p>2</p></div>
-                    <div class="num num-3"><p>3</p></div>
-                    <div class="num num-4"><p>4</p></div>
-                    <div class="num num-5"><p>5</p></div>
-                    <div class="num num-6"><p>6</p></div>
-                    <div class="num num-7"><p>7</p></div>
-                    <div class="num num-8"><p>8</p></div>
-                    <div class="num num-9"><p>9</p></div>
-                 </div>
-              </div>
-           </div>
-        </div>
-     </div>
-     <div class="reload">
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 65 65" enable-background="new 0 0 65 65" xml:space="preserve">
-         </svg>
-        <p>Vous avez perdu 😹</p>
-     </div>
-
+      Pour continuer, veuillez entrer le code : <input type="text" name="password" id="password"
+         placeholder="Entrez le code pour continuer" maxlength="10" onkeydown="EnterPressed()"></input>
+   </div>
 </body>

@@ -8,6 +8,14 @@ a {
   /* Permet d'enlever le soulignage automatique */
 }
 
+img.ordi {
+  width: 10%;
+  height: auto;
+  display: block;
+  margin: auto;
+  padding: 10px;
+}
+
 img {
   width: 90%;
   height: auto;
@@ -16,6 +24,26 @@ img {
   padding: 10px;
 }
 
+img.exit {
+  width: 10%;
+  padding-top: 120px;
+  width: 5%;
+  height: 8%;
+}
+
+body.ordifond {
+  background-image: url(../image/arasaka.png);
+  background-attachment: fixed;
+  text-align: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'cyberfont';
+  font-size: 20px;
+  line-height: 1.5;
+  color: rgb(249, 243, 243);
+  margin: 10;
+  padding: 10;
+}
 
 body {
   background-image: url(../image/nightcity.png);
@@ -30,7 +58,7 @@ body {
   padding: 10;
 }
 
-.main_page{
+.main_page {
   background-image: url(../image/cyberspace.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -79,13 +107,13 @@ p {
   background-color: rgb(182, 182, 182);
 }
 
-button.button_niv2 {
+.button_niv2 {
   cursor: default;
   border: 0px;
   background: none;
-  padding-top: 1,9px;
-  width: 6,5%;
-  height: 6,5%;
+  padding-top: 1, 9px;
+  width: 1, 5px;
+  height: 6, 5px;
 }
 
 button.button_main {
@@ -117,6 +145,33 @@ button.button_main {
   color: rgb(8, 4, 4);
 }
 
+.retour {
+  text-align: center;
+  font-size: 40px;
+  text-decoration: none;
+  color: rgb(249, 243, 243);
+}
+
+.titreordi {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(249, 243, 243);
+}
+
+.computer {
+  opacity: 0.90;
+  background-color: rgb(230, 7, 7);
+  border-radius: 10px;
+  padding: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+  height: auto;
+  width: 60%;
+  text-align: left;
+  font-size: 20px;
+  color: rgb(8, 4, 4);
+}
+
 /* Path: asset\css\style.css */
 
 div.element {
@@ -134,6 +189,7 @@ div.element {
 }
 
 .contenu_pied {
+
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -166,41 +222,94 @@ div.element {
 }
 
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*
+ * Start
+*/
+.glassBox {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  max-width: 25%;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right-color: rgba(255, 255, 255, 0.1);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20%;
+}
+
+.glassBox,
+.glassBox * {
+  box-sizing: border-box;
+  transition: 400ms;
+}
+
+.glassBox__title {
+  text-align: center;
+  margin-top: 120%;
+  color: #FFF;
+  font-size: 150%;
+  font-weight: 400;
+  font-family: "Lato";
+}
+
+.glassBox__content {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  text-align: center;
+  color: #FFF;
+  font-size: 14px;
+  font-family: "Lato";
+  letter-spacing: 0.1em;
+  opacity: 0;
+}
+
+.glassBox:hover .glassBox__imgBox .timer {
+  transform: translate(10%, -10%) scale(1.3);
+}
+
 /*=================
 * TIMER
 *=================*/
 .timer {
-  margin: 0;
-  padding: 0;
   font-family: "Arimo", sans-serif;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
   width: 550px;
   height: 248px;
-  display: absolute;
+  display: block;
   position: absolute;
-  top: 25%;
-  left: 20%;
-  margin-left: -275px;
-  margin-top: -124px;
+  top: 50%;
+  left: 50%;
+  margin-left: -35%;
+  margin-top: -25%;
   color: white;
 }
+
 .timer * {
   cursor: default;
-  font-family: "Arimo", sans-serif;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
 }
-.timer h3 {
-  width: 100%;
-  font-size: 26px;
-  letter-spacing: 4px;
-  text-align: center;
-}
+
 .timer--clock {
   width: 100%;
   position: relative;
@@ -208,10 +317,12 @@ div.element {
   margin-top: 22px;
   overflow: hidden;
 }
+
 .timer--clock .clock-display-grp {
   width: 100%;
   position: relative;
 }
+
 .timer--clock .clock-display-grp .number-grp {
   width: auto;
   display: block;
@@ -219,71 +330,37 @@ div.element {
   float: left;
   overflow: hidden;
 }
+
 .timer--clock .clock-display-grp .number-grp .number-grp-wrp {
   width: 100%;
   position: relative;
 }
+
 .timer--clock .clock-display-grp .number-grp .number-grp-wrp .num {
   width: 100%;
   position: relative;
   height: 156px;
 }
+
 .timer--clock .clock-display-grp .number-grp .number-grp-wrp .num p {
   width: auto;
   display: table;
-  font-size: 205px;
+  font-size: 600%;
   line-height: 150px;
   font-weight: bold;
 }
+
 .timer--clock .clock-separator {
   width: auto;
   float: left;
   display: block;
   height: 156px;
 }
+
 .timer--clock .clock-separator p {
   width: auto;
   display: table;
-  font-size: 205px;
+  font-size: 600%;
   line-height: 150px;
   font-weight: bold;
-}
-.timer h4 {
-  width: 100%;
-  font-size: 10px;
-  letter-spacing: 6px;
-  text-align: center;
-  padding-top: 25px;
-  float: left;
-}
-
-.reload {
-  width: 125px;
-  height: 14px;
-  position: absolute;
-  bottom: 50vh;
-  left: 50%;
-  margin-left: -62.5px;
-  opacity: 0;
-  display: none;
-  cursor: pointer;
-  z-index: 9999;
-}
-.reload:hover svg path {
-  fill: #666666;
-}
-.reload:hover p {
-  color: #666666;
-}
-.reload svg {
-  width: 12px;
-  height: 12px;
-  float: left;
-  margin-right: 10px;
-}
-.reload p {
-  color: #2b2b2b;
-  font-size: 12px;
-  float: left;
-  line-height: 11px;
 }
